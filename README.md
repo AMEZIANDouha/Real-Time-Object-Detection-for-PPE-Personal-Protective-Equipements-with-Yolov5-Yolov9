@@ -62,12 +62,12 @@ Training conducted on GPUs for accelerated computation, with parameters such as 
      pip install -r requirements.txt
 4. **Training:**
    To train the model, run:
-       ```bash
+   ```bash
    python train.py --data data.yaml --cfg yolov5.yaml --weights yolov5s.pt --batch-size 16 --epochs 50
 
 6. **Validation:**
     Evaluate the model using the validation set:
-       ```bash
+    ```bash
    python val.py --data data.yaml --weights runs/train/exp/weights/best.pt
 
 8. **Testing:**
