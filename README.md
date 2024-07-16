@@ -56,7 +56,31 @@ Training conducted on GPUs for accelerated computation, with parameters such as 
 
    ```bash
    git clone git@github.com:AMEZIANDouha/Real-Time-Object-Detection-for-PPE-Personal-Protective-Equipements-with-Yolov5-Yolov9.git
+2. **Install Dependencies:**
+    Navigate to the project directory and install dependencies using:
+     ```bash
+     pip install -r requirements.txt
+4. **Training:**
+   To train the model, run:
+       ```bash
+        python train.py --data data.yaml --cfg yolov5.yaml --weights yolov5s.pt --batch-size 16 --epochs 50
 
+6. **Validation:**
+    Evaluate the model using the validation set:
+       ```bash
+          python val.py --data data.yaml --weights runs/train/exp/weights/best.pt
+
+8. **Testing:**
+     Test the model's performance on new data:
+
+    ```bash
+       python test.py --data data.yaml --weights runs/train/exp/weights/best.pt --img-size 640 --conf-thres
+
+
+
+
+
+ 
 ## 8. Acknowledgment
 
 We acknowledge the contributions of the Roboflow team for providing the annotated PPE dataset and the open-source community for developing PyTorch and YOLOv5/YOLOv9.
