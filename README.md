@@ -16,6 +16,8 @@
 ## 1. Project Overview
 This project focuses on utilizing YOLOv5/YOLOv9 for real-time detection of Personal Protective Equipment (PPE) in various settings. The detection of PPE items such as helmets, vests, masks, and gloves is crucial for ensuring safety compliance in industrial and healthcare environments.
 
+**Note :**: You will find the links to the dataset used (train , valid, and test ) into the notebooks related to each algorithm !
+
 ## 2. Key Objectives
 
 ###### Accurate Detection: 
